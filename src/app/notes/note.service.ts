@@ -15,4 +15,12 @@ export class NoteService {
     this.notes.push(note);
     console.log('added new note',this.notes);
   }
+
+  public removeNote(note){
+    var index = this.notes.indexOf(note); // get index if value found otherwise -1
+
+    if (index > -1) { //if found
+      this.notes.splice(index, 1);
+    }
+  }
 }

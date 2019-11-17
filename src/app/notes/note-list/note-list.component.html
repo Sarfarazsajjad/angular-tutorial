@@ -1,3 +1,4 @@
 <p *ngFor="let note of notes">
     {{note.title}} : {{note.description}}
+    <button (click)="deleteNote(note)" class="button fancy-button"><i class="material-icons">delete</i></button>
 </p>

@@ -15,5 +15,7 @@ export class NoteListComponent implements OnInit {
   ngOnInit() {
     this.notes = this.noteService.notes;
   }
-
+  deleteNote(note){
+    this.noteService.removeNote(note);
+  }
 }
