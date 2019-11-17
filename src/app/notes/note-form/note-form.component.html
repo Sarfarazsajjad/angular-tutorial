@@ -1,0 +1,7 @@
+<form [formGroup]="notesForm">
+    <label>Title</label>
+    <input type="text" formControlName="title">
+    <label>Description</label>
+    <textarea rows="4" cols="50" formControlName="description"></textarea>
+    <div><button (click)="saveNote()">Save</button></div>
+</form>
